@@ -4,19 +4,19 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 public class Cell {
-    //content of this cell (empty, cross, nought)
+    	//content of this cell (empty, cross, nought)
 	Player content;
-	//row and column of this cell
+		//row and column of this cell
 	int row, col;
 	
 	/** Constructor to initialise this cell with the specified row and col */
 	public Cell(int row, int col) {
 		
-		// TODO: Initialise the variables row, col 
-
+		this.row = row;				 //  Initialised the variables row, col 
+		this.col = col;
 		
 		
-		//TODO: call the method that sets the cell content to EMPTY
+		clear();  //call the method that sets the cell content to EMPTY
 		 
 	}
 	
@@ -45,7 +45,7 @@ public class Cell {
 	/** Set this cell's content to EMPTY */
 	public void clear() {
 		
-		// TODO: Set the value of content to Empty (Remember this is an enum)
+		this.content = Player.Empty;		//  Set the value of content to Empty (Remember this is an enum)
 
 		
 	}
