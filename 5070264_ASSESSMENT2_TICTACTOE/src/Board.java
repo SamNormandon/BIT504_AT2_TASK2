@@ -28,7 +28,8 @@ public class Board {
 	public boolean isDraw() {
 		for (int row = 0; row < GameMain.ROWS; ++ row) {		// nested loop to check whether the game has ended in a draw
 			for (int col = 0; col < GameMain.COLS; ++ col) {
-				if (cells [row][col].getContent()== Player.Empty); {// check whether any of the cells content in the board is a draw
+				
+				if (cells [row][col].getContent()== Player.Empty) {// check whether any of the cells content in the board is a draw
 				 return false;	
 				}// return if it is not a draw
 			}
@@ -49,7 +50,7 @@ public class Board {
 			return true; 
 		
 		// check if the player has 3 (O's or X's) in that column (playerCol)
-		 if (cells[0][playerCol].content == thePlayer && cells[0][playerCol].content == thePlayer && cells[2][playerCol].content == thePlayer)//  Check if the player has 3 in the playerCol.
+		 if (cells[0][playerCol].content == thePlayer && cells[1][playerCol].content == thePlayer && cells[2][playerCol].content == thePlayer)//  Check if the player has 3 in the playerCol.
 		  return true;
 		
 		// check the diagonals
