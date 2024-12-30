@@ -19,7 +19,14 @@ public class Cell {
 		clear();  //call the method that sets the cell content to EMPTY
 		 
 	}
+	public Player getContent() {	// set method to get Content
+		
+		return content;
+	}
 	
+	public void setContent(Player content) {
+		this.content =content;
+	}
 
 	/** Paint itself on the graphics canvas, given the Graphics context g */ 
 	public void paint(Graphics g) {
@@ -49,5 +56,8 @@ public class Cell {
 
 		
 	}
+
+
+	
 		
 }
